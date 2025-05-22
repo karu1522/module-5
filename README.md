@@ -10,7 +10,7 @@ To write a C Program to find area of rectangle using pointer.
 5.	Stop the program.
 
 ## PROGRAM
-
+```
  #include <stdio.h>
  int main() {
  float length, width, area;
@@ -23,7 +23,7 @@ printf("Enter the length of the rectangle: ");
  printf("The area of the rectangle is: %.2f\n", area);
  return 0;
  }
- 
+ ```
 ## OUTPUT
 		       	
 ![image](https://github.com/user-attachments/assets/60a8a5e3-e0fa-4936-832f-0727ced1f63e)
@@ -48,7 +48,7 @@ To write a C Program to print 'WELCOME' using malloc() and free().
 6.	Stop the program.
 
 ## PROGRAM
-
+```
  #include <stdio.h>
  #include <stdlib.h>
  int main() {
@@ -63,7 +63,7 @@ To write a C Program to print 'WELCOME' using malloc() and free().
  free(str);
  return 0;
  }
- 
+ ```
 ## OUTPUT
 
 ![image](https://github.com/user-attachments/assets/819a2e95-4987-4e9d-8660-3f33ed028312)
@@ -88,7 +88,7 @@ To write a C Program to store the student information and display it using struc
 4.	Stop the program.
 
 ## PROGRAM
-
+```
  #include <stdio.h>
  struct Student {
  char name[50];
@@ -109,7 +109,7 @@ printf("Enter roll number: ");
  printf("Marks: %.2f\n", student.marks);
  return 0;
  }
- 
+ ```
 ## OUTPUT
 
 ![image](https://github.com/user-attachments/assets/02a974d2-a37c-4df9-adf0-ae12da3438d6)
@@ -136,7 +136,7 @@ To write a C Program to read and store the data of 3 employees and calculate the
 5.	Stop the program.
 
 ## PROGRAM
-
+```
  #include <stdio.h>
  int main() {
  int a = 44;  
@@ -145,7 +145,7 @@ int result = a << b;
  printf("The result of %d << %d is: %d\n", a, b, result);
  return 0;
  }
- 
+ ```
  ## OUTPUT
 
  ![image](https://github.com/user-attachments/assets/940fff20-7a54-4100-8059-d9d9bddfb0e6)
@@ -192,7 +192,7 @@ Step 7: Output Loop (i = 0 to 1):
 Step 8: End the program.
 
 ## PROGRAM
-
+```
  #include <stdio.h>
  struct Student {
  char name[10];
@@ -228,7 +228,7 @@ int total;
     }
     return 0;
  }
- 
+ ```
 ## OUTPUT
 
  ![image](https://github.com/user-attachments/assets/f0d54833-a3ad-4737-82a3-106f1dac5fab)
