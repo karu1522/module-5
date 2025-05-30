@@ -137,18 +137,46 @@ To write a C Program to read and store the data of 3 employees and calculate the
 
 ## PROGRAM
 ```
- #include <stdio.h>
- int main() {
- int a = 44;  
-int b = 3;   
-int result = a << b;
- printf("The result of %d << %d is: %d\n", a, b, result);
- return 0;
- }
+#include <stdio.h>
+struct Employee {
+    char name[50];
+    int id;
+    float basicSalary;
+    float hra;
+    float da;
+    float grossSalary;
+};
+int main() {
+    struct Employee emp[3];
+    for (int i = 0; i < 3; i++) {
+        printf("\nEnter details for Employee %d:\n", i + 1);
+        printf("Name: ");
+        scanf("%s", emp[i].name);  
+        printf("ID: ");
+        scanf("%d", &emp[i].id);
+        printf("Basic Salary: ");
+        scanf("%f", &emp[i].basicSalary);
+        emp[i].hra = 0.20 * emp[i].basicSalary;
+        emp[i].da = 0.80 * emp[i].basicSalary;
+        emp[i].grossSalary = emp[i].basicSalary + emp[i].hra + emp[i].da;
+    }
+    printf("\n--- Employee Salary Details ---\n");
+    for (int i = 0; i < 3; i++) {
+        printf("\nEmployee %d:\n", i + 1);
+        printf("Name        : %s\n", emp[i].name);
+        printf("ID          : %d\n", emp[i].id);
+        printf("Basic Salary: %.2f\n", emp[i].basicSalary);
+        printf("HRA         : %.2f\n", emp[i].hra);
+        printf("DA          : %.2f\n", emp[i].da);
+        printf("Gross Salary: %.2f\n", emp[i].grossSalary);
+    }
+    return 0;  
+}
  ```
  ## OUTPUT
 
- ![image](https://github.com/user-attachments/assets/940fff20-7a54-4100-8059-d9d9bddfb0e6)
+![image](https://github.com/user-attachments/assets/9b524abb-8ede-4773-a979-b5af9210de81)
+
 
 
 ## RESULT
